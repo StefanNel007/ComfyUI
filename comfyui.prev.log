@@ -1,0 +1,164 @@
+** ComfyUI startup time: 2024-01-01 02:49:26.975130
+** Platform: Linux
+** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+** Python executable: /usr/bin/python
+** Log path: /mnt/c/Users/Stefa/Code_Local/ComfyUI/comfyui.log
+
+Prestartup times for custom nodes:
+   0.1 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager
+
+Total VRAM 8188 MB, total RAM 23638 MB
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 4060 Laptop GPU : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using pytorch cross attention
+### Loading: ComfyUI-Impact-Pack (V4.56)
+### Loading: ComfyUI-Impact-Pack (Subpack: V0.4)
+[Impact Pack] Wildcards loading done.
+### Loading: ComfyUI-Inspire-Pack (V0.54.4)
+### Loading: ComfyUI-Manager (V1.17.1)
+### ComfyUI Revision: 1867 [36e15f25] | Released on '2023-12-31'
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+
+Import times for custom nodes:
+   0.4 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Inspire-PackFETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+
+   0.5 seconds:FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json 
+/mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-ManagerFETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+
+   2.5 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+got prompt
+ERROR:root:Failed to validate prompt for output 2:
+ERROR:root:* KSamplerAdvanced 5:
+ERROR:root:  - Required input is missing: latent_image
+ERROR:root:* VAEDecode 6:
+ERROR:root:  - Required input is missing: vae
+ERROR:root:Output will be ignored
+invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+got prompt
+model_type EPS
+adm 2816
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+Requested to load SDXLClipModel
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+100%|██████████████████████| 20/20 [01:29<00:00,  2.16it/s]100%|██████████████████████| 20/20 [01:29<00:00,  4.49s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Prompt executed in 207.25 seconds
+got prompt
+
+Prompt executed in 32.40 seconds
+got prompt
+Requested to load SDXLClipModel
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+100%|██████████████████████| 60/60 [01:11<00:00,  1.21s/it]100%|██████████████████████| 60/60 [01:11<00:00,  1.19s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Prompt executed in 317.08 seconds
+got prompt
+model_type EPS
+adm 2560
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+loaded straight to GPU
+Requested to load SDXLRefiner
+Loading 1 new model
+loading in lowvram mode 64.0
+Requested to load SDXLRefinerClipModel
+Loading 1 new model
+model_type EPS
+adm 2816
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+Requested to load SDXLClipModel
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+100%|██████████████████████| 20/20 [00:14<00:00,  1.45it/s]100%|██████████████████████| 20/20 [00:14<00:00,  1.36it/s]
+Requested to load SDXLRefiner
+Loading 1 new model
+100%|████████████████████████| 5/5 [00:03<00:00,  1.32it/s]100%|████████████████████████| 5/5 [00:03<00:00,  1.31it/s]
+Requested to load AutoencoderKL
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+100%|██████████████████████| 11/11 [00:39<00:00,  3.65s/it]100%|██████████████████████| 11/11 [00:39<00:00,  3.63s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Prompt executed in 451.02 seconds
+got prompt
+model_type EPS
+adm 2816
+got prompt
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+loaded straight to GPU
+Requested to load SDXL
+Loading 1 new model
+Requested to load SDXLClipModel
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+100%|██████████████████████| 20/20 [01:50<00:00,  4.94s/it]100%|██████████████████████| 20/20 [01:50<00:00,  5.55s/it]
+Requested to load SDXLRefiner
+Loading 1 new model
+100%|████████████████████████| 5/5 [00:09<00:00,  1.79s/it]100%|████████████████████████| 5/5 [00:09<00:00,  1.88s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+got prompt
+
+Prompt executed in 1441.50 seconds
+Requested to load SDXLRefinerClipModel
+Loading 1 new model
+Requested to load SDXLClipModel
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+100%|██████████████████████| 25/25 [00:39<00:00,  1.54s/it]100%|██████████████████████| 25/25 [00:39<00:00,  1.58s/it]
+Requested to load SDXLRefiner
+Loading 1 new model
+Requested to load AutoencoderKL
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+100%|██████████████████████| 11/11 [02:03<00:00, 11.66s/it]100%|██████████████████████| 11/11 [02:03<00:00, 11.19s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Warning: Ran out of memory when regular VAE decoding, retrying with tiled VAE decoding.
+Prompt executed in 339.99 seconds
+got prompt
+Requested to load SDXL
+Loading 1 new model
+got prompt
+got prompt
+
+Prompt executed in 2140.23 seconds
+model_type EPS
+adm 2816
+
+Stopped server

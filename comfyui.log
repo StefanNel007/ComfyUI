@@ -1,0 +1,49 @@
+** ComfyUI startup time: 2024-01-01 04:49:06.949733
+** Platform: Linux
+** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+** Python executable: /usr/bin/python
+** Log path: /mnt/c/Users/Stefa/Code_Local/ComfyUI/comfyui.log
+
+Prestartup times for custom nodes:
+   0.1 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager
+
+Total VRAM 8188 MB, total RAM 23638 MB
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 4060 Laptop GPU : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using pytorch cross attention
+### Loading: ComfyUI-Impact-Pack (V4.56)
+### Loading: ComfyUI-Impact-Pack (Subpack: V0.4)
+### Loading: ComfyUI-Inspire-Pack (V0.54.4)
+[Impact Pack] Wildcards loading done.
+### Loading: ComfyUI-Manager (V1.17.1)
+### ComfyUI Revision: 1867 [36e15f25] | Released on '2023-12-31'
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+
+Import times for custom nodes:
+   0.2 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Inspire-Pack
+   0.5 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager
+   2.1 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+got prompt
+model_type EPS
+adm 2816
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+Requested to load SDXLClipModel
+Loading 1 new model
+model_type EPS
+adm 2816

@@ -1,0 +1,1005 @@
+** ComfyUI startup time: 2023-12-31 22:05:55.180918
+** Platform: Linux
+** Python version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+** Python executable: /usr/bin/python
+** Log path: /mnt/c/Users/Stefa/Code_Local/ComfyUI/comfyui.log
+
+Prestartup times for custom nodes:
+   0.1 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager
+
+Total VRAM 8188 MB, total RAM 23638 MB
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 4060 Laptop GPU : cudaMallocAsync
+VAE dtype: torch.bfloat16
+Using pytorch cross attention
+### Loading: ComfyUI-Manager (V1.17.1)
+### ComfyUI Revision: 1866 [1b103e0c] | Released on '2023-12-30'
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+
+Import times for custom nodes:
+   0.5 seconds: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager
+
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/custom-node-list.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/custom-node-list.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+Install custom node 'ComfyUI Impact Pack'
+install: ['https://github.com/ltdrdata/ComfyUI-Impact-Pack']
+Download: git clone 'https://github.com/ltdrdata/ComfyUI-Impact-Pack'
+0it [00:00, ?it/s]100%|███████████████| 718.0/718.0 [00:01<00:00, 500.60it/s]100%|███████████████| 718.0/718.0 [00:01<00:00, 500.44it/s]100%|████████████████| 141.0/141.0 [00:01<00:00, 97.70it/s]100%|████████████████| 141.0/141.0 [00:01<00:00, 97.68it/s]100%|█████████████| 3175.0/3175.0 [00:03<00:00, 929.46it/s]100%|█████████████| 3175.0/3175.0 [00:03<00:00, 929.13it/s]100%|█████████████| 2104.0/2104.0 [00:03<00:00, 590.66it/s]100%|█████████████| 2104.0/2104.0 [00:03<00:00, 590.56it/s]100%|█████████████| 2104.0/2104.0 [00:04<00:00, 499.79it/s]
+Install: pip packages
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'segment-anything']
+ Defaulting to user installation because normal site-packages is not writeable
+ Collecting segment-anything
+   Downloading segment_anything-1.0-py3-none-any.whl (36 kB)
+[!]  DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: segment-anything
+ Successfully installed segment-anything-1.0
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'scikit-image']
+ Defaulting to user installation because normal site-packages is not writeable
+ Collecting scikit-image
+   Downloading scikit_image-0.22.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (13 kB)
+ Requirement already satisfied: numpy>=1.22 in /home/stefan-nel/.local/lib/python3.10/site-packages (from scikit-image) (1.25.2)
+ Requirement already satisfied: scipy>=1.8 in /usr/local/lib/python3.10/dist-packages (from scikit-image) (1.9.3)
+ Requirement already satisfied: networkx>=2.8 in /home/stefan-nel/.local/lib/python3.10/site-packages (from scikit-image) (3.2.1)
+ Requirement already satisfied: pillow>=9.0.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from scikit-image) (10.0.1)
+ Collecting imageio>=2.27 (from scikit-image)
+   Downloading imageio-2.33.1-py3-none-any.whl.metadata (4.9 kB)
+ Collecting tifffile>=2022.8.12 (from scikit-image)
+   Downloading tifffile-2023.12.9-py3-none-any.whl.metadata (31 kB)
+ Requirement already satisfied: packaging>=21 in /home/stefan-nel/.local/lib/python3.10/site-packages (from scikit-image) (23.1)
+ Collecting lazy_loader>=0.3 (from scikit-image)
+   Downloading lazy_loader-0.3-py3-none-any.whl.metadata (4.3 kB)
+ Downloading scikit_image-0.22.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (14.7 MB)
+    ━━━━━━━━━━━━━━━━━━━━━ 14.7/14.7 MB 15.7 MB/s eta 0:00:00
+ Downloading imageio-2.33.1-py3-none-any.whl (313 kB)
+    ━━━━━━━━━━━━━━━━━━━ 313.3/313.3 kB 19.4 MB/s eta 0:00:00
+ Downloading lazy_loader-0.3-py3-none-any.whl (9.1 kB)
+ Downloading tifffile-2023.12.9-py3-none-any.whl (223 kB)
+    ━━━━━━━━━━━━━━━━━━━ 223.6/223.6 kB 18.1 MB/s eta 0:00:00
+[!]  DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: tifffile, lazy_loader, imageio, scikit-image
+[!]   WARNING: The scripts lsm2bin, tiff2fsspec, tiffcomment and tifffile are installed in '/home/stefan-nel/.local/bin' which is not on PATH.
+[!]   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+[!]   WARNING: The scripts imageio_download_bin and imageio_remove_bin are installed in '/home/stefan-nel/.local/bin' which is not on PATH.
+[!]   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ Successfully installed imageio-2.33.1 lazy_loader-0.3 scikit-image-0.22.0 tifffile-2023.12.9
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'piexif']
+ Defaulting to user installation because normal site-packages is not writeable
+ Collecting piexif
+   Downloading piexif-1.1.3-py2.py3-none-any.whl (20 kB)
+[!]  DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installing collected packages: piexif
+ Successfully installed piexif-1.1.3
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'transformers']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: transformers in /usr/local/lib/python3.10/dist-packages (4.30.2)
+ Requirement already satisfied: filelock in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers) (3.12.3)
+ Requirement already satisfied: huggingface-hub<1.0,>=0.14.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers) (0.16.4)
+ Requirement already satisfied: numpy>=1.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers) (1.25.2)
+ Requirement already satisfied: packaging>=20.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers) (23.1)
+ Requirement already satisfied: pyyaml>=5.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers) (6.0.1)
+ Requirement already satisfied: regex!=2019.12.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers) (2023.8.8)
+ Requirement already satisfied: requests in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers) (2.31.0)
+ Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.13.3)
+ Requirement already satisfied: safetensors>=0.3.1 in /usr/local/lib/python3.10/dist-packages (from transformers) (0.3.1)
+ Requirement already satisfied: tqdm>=4.27 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers) (4.66.0)
+ Requirement already satisfied: fsspec in /home/stefan-nel/.local/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.14.1->transformers) (2023.9.0)
+ Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/stefan-nel/.local/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.14.1->transformers) (4.7.1)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->transformers) (3.2.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->transformers) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->transformers) (2.0.4)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->transformers) (2023.7.22)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'opencv-python-headless']
+ Defaulting to user installation because normal site-packages is not writeable
+ Collecting opencv-python-headless
+   Downloading opencv_python_headless-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+ Requirement already satisfied: numpy>=1.21.2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from opencv-python-headless) (1.25.2)
+ Downloading opencv_python_headless-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.6 MB)
+    ━━━━━━━━━━━━━━━━━━━━━ 49.6/49.6 MB 16.1 MB/s eta 0:00:00
+[!]  Installing collected packages: opencv-python-headless
+DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Successfully installed opencv-python-headless-4.9.0.80
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'GitPython']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: GitPython in /home/stefan-nel/.local/lib/python3.10/site-packages (3.1.36)
+ Requirement already satisfied: gitdb<5,>=4.0.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from GitPython) (4.0.10)
+ Requirement already satisfied: smmap<6,>=3.0.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from gitdb<5,>=4.0.1->GitPython) (5.0.0)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Install: install script
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', 'install.py']
+[!] 
+100%|██████████| 51996128/51996128 [00:04<00:00, 11137834.64it/s]
+[!] 
+100%|██████████| 22484536/22484536 [00:00<00:00, 26328839.14it/s]
+[!] 
+100%|██████████| 54791722/54791722 [00:04<00:00, 11278017.81it/s]
+ ### ComfyUI-Impact-Pack: Check dependencies
+ ### ComfyUI-Impact-Pack: Updating subpack
+ [Impact Pack] EXECUTE: ['/usr/bin/python', 'install.py'] in '/mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+ Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/e3893a92c5c1907136b6cc75404094db767c1e0cfefe1b43e87dad72af2e4c9f?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27face_yolov8m.pt%3B+filename%3D%22face_yolov8m.pt%22%3B&Expires=1704312451&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwNDMxMjQ1MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlL2UzODkzYTkyYzVjMTkwNzEzNmI2Y2M3NTQwNDA5NGRiNzY3YzFlMGNmZWZlMWI0M2U4N2RhZDcyYWYyZTRjOWY%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=zFCy5hbuJZ27L1sNWQq3UaoFlXC3h8ayWXNxJ8KkheAHO4-a6nJjYTS2QTBC3iqyUxWo0O8lxjPkbcZh3ohDFQ6V-YQOsu9NARcg4toyL8FPoOWqAetLOXqqwFylnW0GwYcrcdW5c2rdMYRPIosaCD3ge3sN90B-80wvZwdUEZJEySV8U4cpJT89qyC9Uh1-U31aNjr2i5UAkmvJA1FoOcmJfrtBGcajUszHtWIr35PqShBmjwy-TCalVmqYxPLi2PDsV1N1soKwDcyufLD-2uhselt5aZZP3Sl0g2fG9-P6mC4ddIXqKjh6lLcaVNQjUhWRN-7WPTmifbEy7n3vJA__&Key-Pair-Id=KVTP0A1DKRTAX to /mnt/c/Users/Stefa/Code_Local/ComfyUI/models/ultralytics/bbox/face_yolov8m.pt
+ Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/30878cea9870964d4a238339e9dcff002078bbbaa1a058b07e11c167f67eca1c?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27hand_yolov8s.pt%3B+filename%3D%22hand_yolov8s.pt%22%3B&Expires=1704307914&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwNDMwNzkxNH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlLzMwODc4Y2VhOTg3MDk2NGQ0YTIzODMzOWU5ZGNmZjAwMjA3OGJiYmFhMWEwNThiMDdlMTFjMTY3ZjY3ZWNhMWM%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=uonXF4dc7gguwpsPEkz1Lrn0mXus-Pd1XGjMx%7Elymrv-zmJaOPiAhGQR7UEJjFhpikJR7%7E-Jmdv5rGt6sKF66Eu%7E7mbZjsfAj%7EKuB5X0do8l2-CYjnpYpKJsymaiB2RFxGIK35PzT83RCW3HGlSMnKPasS6FwTPY7GZen0ReEsgTsN87bvaCT1LejNrlkZsyNpe1v1TrA4JleRIXyIuEC%7E2FZ08D79-LcVRZTSQOWUROAyyBb76r5giE2tALBKV0J3qSU7HDqeQ2OFua%7Eqo9HyxYN7TuzjmXtWMYiqgGG7P89Su044JgJ395JvGIEeTzZ3VKDtJdH51-pvhPKmuKZQ__&Key-Pair-Id=KVTP0A1DKRTAX to /mnt/c/Users/Stefa/Code_Local/ComfyUI/models/ultralytics/bbox/hand_yolov8s.pt
+ Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/1fd7e562f240a5debd48bf737753de6fb60c63f8664121bb522f090a885d8254?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27person_yolov8m-seg.pt%3B+filename%3D%22person_yolov8m-seg.pt%22%3B&Expires=1704312462&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwNDMxMjQ2Mn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlLzFmZDdlNTYyZjI0MGE1ZGViZDQ4YmY3Mzc3NTNkZTZmYjYwYzYzZjg2NjQxMjFiYjUyMmYwOTBhODg1ZDgyNTQ%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=gzE8xeiDMaS2%7Ezi-YXNbMUAlZxO8doBsDGCoLgkHNxC2gTgu7kCo9ZJSq3PY6unqU%7EdTUH9MHbEH%7Et9dyUG2HNmePp7yFLi8f-0zbOU3EQQDtQdNokp5I9lSb7tkv3hmKtVEW8d3VA0BKbqMIQc-aMe6B5wF7DefYdU-Dx09n2myylDR187RdUdQPwQtdjcV-1Onvc9vsWG0CMRWFqVmHC3FdC1EN4Koe37Gr-VR1Ok9OAbAedE1GAurkdRRV7PGwCUz7ghuN59R3E-UJ5uv2VOUfUT3Rr5-zbSRUhw1KHNi7HXbIpclE99CalDlJ8oNOuUAvKgfkUTU65OsH4ZyDg__&Key-Pair-Id=KVTP0A1DKRTAX to /mnt/c/Users/Stefa/Code_Local/ComfyUI/models/ultralytics/segm/person_yolov8m-seg.pt
+ req_path: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack/requirements.txt
+ [Impact Pack] EXECUTE: ['/usr/bin/python', '-m', 'pip', 'install', '-r', 'requirements.txt'] in '/mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+ Defaulting to user installation because normal site-packages is not writeable
+ Collecting ultralytics!=8.0.177 (from -r requirements.txt (line 1))
+   Downloading ultralytics-8.0.231-py3-none-any.whl.metadata (32 kB)
+ Requirement already satisfied: matplotlib>=3.3.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.8.1)
+ Requirement already satisfied: numpy>=1.22.2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.25.2)
+ Collecting opencv-python>=4.6.0 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
+   Downloading opencv_python-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+ Requirement already satisfied: pillow>=7.1.2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.0.1)
+ Requirement already satisfied: pyyaml>=5.3.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (6.0.1)
+ Requirement already satisfied: requests>=2.23.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.31.0)
+ Requirement already satisfied: scipy>=1.4.1 in /usr/local/lib/python3.10/dist-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.9.3)
+ Requirement already satisfied: torch>=1.8.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.0+cu121)
+ Requirement already satisfied: torchvision>=0.9.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.16.0+cu121)
+ Requirement already satisfied: tqdm>=4.64.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.66.0)
+ Requirement already satisfied: psutil in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (5.9.7)
+ Collecting py-cpuinfo (from ultralytics!=8.0.177->-r requirements.txt (line 1))
+   Downloading py_cpuinfo-9.0.0-py3-none-any.whl (22 kB)
+ Collecting thop>=0.1.1 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
+   Downloading thop-0.1.1.post2209072238-py3-none-any.whl (15 kB)
+ Requirement already satisfied: pandas>=1.1.4 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.0.3)
+ Collecting seaborn>=0.11.0 (from ultralytics!=8.0.177->-r requirements.txt (line 1))
+   Downloading seaborn-0.13.0-py3-none-any.whl.metadata (5.3 kB)
+ Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.2.0)
+ Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.12.1)
+ Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.44.0)
+ Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.4.5)
+ Requirement already satisfied: packaging>=20.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (23.1)
+ Requirement already satisfied: pyparsing>=2.3.1 in /usr/lib/python3/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.4.7)
+ Requirement already satisfied: python-dateutil>=2.7 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.8.2)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+[!]   WARNING: The script cpuinfo is installed in '/home/stefan-nel/.local/bin' which is not on PATH.
+[!]   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+[!]   WARNING: The scripts ultralytics and yolo are installed in '/home/stefan-nel/.local/bin' which is not on PATH.
+[!]   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ Requirement already satisfied: pytz>=2020.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+ Requirement already satisfied: tzdata>=2022.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.2.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.0.4)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.7.22)
+ Requirement already satisfied: filelock in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.12.3)
+ Requirement already satisfied: typing-extensions in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.7.1)
+ Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.12)
+ Requirement already satisfied: networkx in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.2.1)
+ Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.2)
+ Requirement already satisfied: fsspec in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.9.0)
+ Requirement already satisfied: triton==2.1.0 in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.0)
+ Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.16.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/dist-packages (from sympy->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.3.0)
+ Downloading ultralytics-8.0.231-py3-none-any.whl (663 kB)
+    ━━━━━━━━━━━━━━━━━━━ 663.2/663.2 kB 14.4 MB/s eta 0:00:00
+ Downloading opencv_python-4.9.0.80-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (62.2 MB)
+    ━━━━━━━━━━━━━━━━━━━━━━ 62.2/62.2 MB 3.2 MB/s eta 0:00:00
+ Downloading seaborn-0.13.0-py3-none-any.whl (294 kB)
+    ━━━━━━━━━━━━━━━━━━━ 294.6/294.6 kB 15.9 MB/s eta 0:00:00
+ Installing collected packages: py-cpuinfo, opencv-python, seaborn, thop, ultralytics
+ Successfully installed opencv-python-4.9.0.80 py-cpuinfo-9.0.0 seaborn-0.13.0 thop-0.1.1.post2209072238 ultralytics-8.0.231
+ req_path: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack/requirements.txt
+ [Impact Pack] EXECUTE: ['/usr/bin/python', '-m', 'pip', 'install', '-r', 'requirements.txt'] in '/mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/impact_subpack'
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: ultralytics!=8.0.177 in /home/stefan-nel/.local/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (8.0.231)
+ Requirement already satisfied: matplotlib>=3.3.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.8.1)
+ Requirement already satisfied: numpy>=1.22.2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.25.2)
+ Requirement already satisfied: opencv-python>=4.6.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.9.0.80)
+ Requirement already satisfied: pillow>=7.1.2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (10.0.1)
+ Requirement already satisfied: pyyaml>=5.3.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (6.0.1)
+ Requirement already satisfied: requests>=2.23.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.31.0)
+ Requirement already satisfied: scipy>=1.4.1 in /usr/local/lib/python3.10/dist-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.9.3)
+ Requirement already satisfied: torch>=1.8.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.0+cu121)
+ Requirement already satisfied: torchvision>=0.9.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.16.0+cu121)
+ Requirement already satisfied: tqdm>=4.64.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.66.0)
+ Requirement already satisfied: psutil in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (5.9.7)
+ Requirement already satisfied: py-cpuinfo in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (9.0.0)
+ Requirement already satisfied: thop>=0.1.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.1.1.post2209072238)
+ Requirement already satisfied: pandas>=1.1.4 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.0.3)
+ Requirement already satisfied: seaborn>=0.11.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.13.0)
+ Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.2.0)
+ Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (0.12.1)
+ Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.44.0)
+ Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.4.5)
+ Requirement already satisfied: packaging>=20.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (23.1)
+ Requirement already satisfied: pyparsing>=2.3.1 in /usr/lib/python3/dist-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.4.7)
+ Requirement already satisfied: python-dateutil>=2.7 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.8.2)
+ Requirement already satisfied: pytz>=2020.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ [!]Requirement already satisfied: tzdata>=2022.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.3)
+ 
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.2.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.0.4)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.7.22)
+ Requirement already satisfied: filelock in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.12.3)
+ Requirement already satisfied: typing-extensions in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (4.7.1)
+ Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.12)
+ Requirement already satisfied: networkx in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.2.1)
+ Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (3.1.2)
+ Requirement already satisfied: fsspec in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2023.9.0)
+ Requirement already satisfied: triton==2.1.0 in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.0)
+ Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.16.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/dist-packages (from sympy->torch>=1.8.0->ultralytics!=8.0.177->-r requirements.txt (line 1)) (1.3.0)
+ req_path: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt
+ ### ComfyUI-Impact-Pack: Check basic models
+ Downloading https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth to /mnt/c/Users/Stefa/Code_Local/ComfyUI/models/sams/sam_vit_b_01ec64.pth
+100%|█████████▉| 373948416/375042383 [00:21<00:00, 17297750.62it/s]
+100%|██████████| 375042383/375042383 [00:21<00:00, 17225386.01it/s]
+ ### ComfyUI-Impact-Pack: onnx model directory created (/mnt/c/Users/Stefa/Code_Local/ComfyUI/models/onnx)
+Installation was successful.
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'ultralytics']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: ultralytics in /home/stefan-nel/.local/lib/python3.10/site-packages (8.0.231)
+ Requirement already satisfied: matplotlib>=3.3.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics) (3.8.1)
+ Requirement already satisfied: numpy>=1.22.2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (1.25.2)
+ Requirement already satisfied: opencv-python>=4.6.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (4.9.0.80)
+ Requirement already satisfied: pillow>=7.1.2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (10.0.1)
+ Requirement already satisfied: pyyaml>=5.3.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (6.0.1)
+ Requirement already satisfied: requests>=2.23.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (2.31.0)
+ Requirement already satisfied: scipy>=1.4.1 in /usr/local/lib/python3.10/dist-packages (from ultralytics) (1.9.3)
+ Requirement already satisfied: torch>=1.8.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics) (2.1.0+cu121)
+ Requirement already satisfied: torchvision>=0.9.0 in /usr/local/lib/python3.10/dist-packages (from ultralytics) (0.16.0+cu121)
+ Requirement already satisfied: tqdm>=4.64.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (4.66.0)
+ Requirement already satisfied: psutil in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (5.9.7)
+ Requirement already satisfied: py-cpuinfo in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (9.0.0)
+ Requirement already satisfied: thop>=0.1.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (0.1.1.post2209072238)
+ Requirement already satisfied: pandas>=1.1.4 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (2.0.3)
+ Requirement already satisfied: seaborn>=0.11.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from ultralytics) (0.13.0)
+ Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics) (1.2.0)
+ Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics) (0.12.1)
+ Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics) (4.44.0)
+ Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.3.0->ultralytics) (1.4.5)
+ Requirement already satisfied: packaging>=20.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (23.1)
+ Requirement already satisfied: pyparsing>=2.3.1 in /usr/lib/python3/dist-packages (from matplotlib>=3.3.0->ultralytics) (2.4.7)
+ Requirement already satisfied: python-dateutil>=2.7 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib>=3.3.0->ultralytics) (2.8.2)
+ Requirement already satisfied: pytz>=2020.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics) (2023.3)
+ Requirement already satisfied: tzdata>=2022.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from pandas>=1.1.4->ultralytics) (2023.3)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics) (3.2.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics) (2.0.4)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests>=2.23.0->ultralytics) (2023.7.22)
+ Requirement already satisfied: filelock in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (3.12.3)
+ Requirement already satisfied: typing-extensions in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (4.7.1)
+ Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics) (1.12)
+ Requirement already satisfied: networkx in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (3.2.1)
+ Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics) (3.1.2)
+ Requirement already satisfied: fsspec in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.8.0->ultralytics) (2023.9.0)
+ Requirement already satisfied: triton==2.1.0 in /usr/local/lib/python3.10/dist-packages (from torch>=1.8.0->ultralytics) (2.1.0)
+ Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib>=3.3.0->ultralytics) (1.16.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch>=1.8.0->ultralytics) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/dist-packages (from sympy->torch>=1.8.0->ultralytics) (1.3.0)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+After restarting ComfyUI, please refresh the browser.
+Update ComfyUI
+path=/mnt/c/Users/Stefa/Code_Local/ComfyUI / repo.is_dirty: True
+Install: pip packages
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'torch']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: torch in /usr/local/lib/python3.10/dist-packages (2.1.0+cu121)
+ Requirement already satisfied: filelock in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch) (3.12.3)
+ Requirement already satisfied: typing-extensions in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch) (4.7.1)
+ Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from torch) (1.12)
+ Requirement already satisfied: networkx in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch) (3.2.1)
+ Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch) (3.1.2)
+ Requirement already satisfied: fsspec in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch) (2023.9.0)
+ Requirement already satisfied: triton==2.1.0 in /usr/local/lib/python3.10/dist-packages (from torch) (2.1.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/dist-packages (from sympy->torch) (1.3.0)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'torchsde']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: torchsde in /usr/local/lib/python3.10/dist-packages (0.2.5)
+ Requirement already satisfied: boltons>=20.2.1 in /usr/local/lib/python3.10/dist-packages (from torchsde) (21.0.0)
+ Requirement already satisfied: torch>=1.6.0 in /usr/local/lib/python3.10/dist-packages (from torchsde) (2.1.0+cu121)
+ Requirement already satisfied: trampoline>=0.1.2 in /usr/local/lib/python3.10/dist-packages (from torchsde) (0.1.2)
+ Requirement already satisfied: numpy>=1.19.* in /home/stefan-nel/.local/lib/python3.10/site-packages (from torchsde) (1.25.2)
+ Requirement already satisfied: scipy>=1.5 in /usr/local/lib/python3.10/dist-packages (from torchsde) (1.9.3)
+ Requirement already satisfied: filelock in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.6.0->torchsde) (3.12.3)
+ Requirement already satisfied: typing-extensions in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.6.0->torchsde) (4.7.1)
+ Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from torch>=1.6.0->torchsde) (1.12)
+ Requirement already satisfied: networkx in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.6.0->torchsde) (3.2.1)
+ Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch>=1.6.0->torchsde) (3.1.2)
+ Requirement already satisfied: fsspec in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch>=1.6.0->torchsde) (2023.9.0)
+ Requirement already satisfied: triton==2.1.0 in /usr/local/lib/python3.10/dist-packages (from torch>=1.6.0->torchsde) (2.1.0)
+ Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch>=1.6.0->torchsde) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/dist-packages (from sympy->torch>=1.6.0->torchsde) (1.3.0)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'torchvision']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: torchvision in /usr/local/lib/python3.10/dist-packages (0.16.0+cu121)
+ Requirement already satisfied: numpy in /home/stefan-nel/.local/lib/python3.10/site-packages (from torchvision) (1.25.2)
+ Requirement already satisfied: requests in /home/stefan-nel/.local/lib/python3.10/site-packages (from torchvision) (2.31.0)
+ Requirement already satisfied: torch==2.1.0 in /usr/local/lib/python3.10/dist-packages (from torchvision) (2.1.0+cu121)
+ Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from torchvision) (10.0.1)
+ Requirement already satisfied: filelock in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch==2.1.0->torchvision) (3.12.3)
+ Requirement already satisfied: typing-extensions in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch==2.1.0->torchvision) (4.7.1)
+ Requirement already satisfied: sympy in /usr/local/lib/python3.10/dist-packages (from torch==2.1.0->torchvision) (1.12)
+ Requirement already satisfied: networkx in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch==2.1.0->torchvision) (3.2.1)
+ Requirement already satisfied: jinja2 in /usr/local/lib/python3.10/dist-packages (from torch==2.1.0->torchvision) (3.1.2)
+ Requirement already satisfied: fsspec in /home/stefan-nel/.local/lib/python3.10/site-packages (from torch==2.1.0->torchvision) (2023.9.0)
+ Requirement already satisfied: triton==2.1.0 in /usr/local/lib/python3.10/dist-packages (from torch==2.1.0->torchvision) (2.1.0)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->torchvision) (3.2.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->torchvision) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->torchvision) (2.0.4)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->torchvision) (2023.7.22)
+ Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.10/dist-packages (from jinja2->torch==2.1.0->torchvision) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in /usr/local/lib/python3.10/dist-packages (from sympy->torch==2.1.0->torchvision) (1.3.0)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'einops']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: einops in /usr/local/lib/python3.10/dist-packages (0.4.1)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'transformers>=4.25.1']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: transformers>=4.25.1 in /usr/local/lib/python3.10/dist-packages (4.30.2)
+ Requirement already satisfied: filelock in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers>=4.25.1) (3.12.3)
+ Requirement already satisfied: huggingface-hub<1.0,>=0.14.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers>=4.25.1) (0.16.4)
+ Requirement already satisfied: numpy>=1.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers>=4.25.1) (1.25.2)
+ Requirement already satisfied: packaging>=20.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers>=4.25.1) (23.1)
+ Requirement already satisfied: pyyaml>=5.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers>=4.25.1) (6.0.1)
+ Requirement already satisfied: regex!=2019.12.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers>=4.25.1) (2023.8.8)
+ Requirement already satisfied: requests in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers>=4.25.1) (2.31.0)
+ Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /usr/local/lib/python3.10/dist-packages (from transformers>=4.25.1) (0.13.3)
+ Requirement already satisfied: safetensors>=0.3.1 in /usr/local/lib/python3.10/dist-packages (from transformers>=4.25.1) (0.3.1)
+ Requirement already satisfied: tqdm>=4.27 in /home/stefan-nel/.local/lib/python3.10/site-packages (from transformers>=4.25.1) (4.66.0)
+ Requirement already satisfied: fsspec in /home/stefan-nel/.local/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.14.1->transformers>=4.25.1) (2023.9.0)
+ Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/stefan-nel/.local/lib/python3.10/site-packages (from huggingface-hub<1.0,>=0.14.1->transformers>=4.25.1) (4.7.1)
+ Requirement already satisfied: charset-normalizer<4,>=2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->transformers>=4.25.1) (3.2.0)
+ Requirement already satisfied: idna<4,>=2.5 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->transformers>=4.25.1) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->transformers>=4.25.1) (2.0.4)
+ Requirement already satisfied: certifi>=2017.4.17 in /home/stefan-nel/.local/lib/python3.10/site-packages (from requests->transformers>=4.25.1) (2023.7.22)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'safetensors>=0.3.0']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: safetensors>=0.3.0 in /usr/local/lib/python3.10/dist-packages (0.3.1)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'aiohttp']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: aiohttp in /home/stefan-nel/.local/lib/python3.10/site-packages (3.8.5)
+ Requirement already satisfied: attrs>=17.3.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from aiohttp) (23.1.0)
+ Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from aiohttp) (3.2.0)
+ Requirement already satisfied: multidict<7.0,>=4.5 in /home/stefan-nel/.local/lib/python3.10/site-packages (from aiohttp) (6.0.4)
+ Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /home/stefan-nel/.local/lib/python3.10/site-packages (from aiohttp) (4.0.2)
+ Requirement already satisfied: yarl<2.0,>=1.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from aiohttp) (1.9.2)
+ Requirement already satisfied: frozenlist>=1.1.1 in /home/stefan-nel/.local/lib/python3.10/site-packages (from aiohttp) (1.4.0)
+ Requirement already satisfied: aiosignal>=1.1.2 in /home/stefan-nel/.local/lib/python3.10/site-packages (from aiohttp) (1.3.1)
+ Requirement already satisfied: idna>=2.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from yarl<2.0,>=1.0->aiohttp) (3.4)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'pyyaml']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: pyyaml in /home/stefan-nel/.local/lib/python3.10/site-packages (6.0.1)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'Pillow']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: Pillow in /home/stefan-nel/.local/lib/python3.10/site-packages (10.0.1)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'scipy']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: scipy in /usr/local/lib/python3.10/dist-packages (1.9.3)
+ Requirement already satisfied: numpy<1.26.0,>=1.18.5 in /home/stefan-nel/.local/lib/python3.10/site-packages (from scipy) (1.25.2)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'tqdm']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: tqdm in /home/stefan-nel/.local/lib/python3.10/site-packages (4.66.0)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'psutil']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: psutil in /home/stefan-nel/.local/lib/python3.10/site-packages (5.9.7)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/custom-node-list.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/custom-node-list.json
+Start updating...[2KUpdating: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager[2KUpdating: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack[2KAll extensions are already up-to-date.
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+Update ComfyUI
+Update ComfyUI
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/custom-node-list.json
+Start updating...[2KUpdating: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager[2KUpdating: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Impact-Pack[2KAll extensions are already up-to-date.
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+got prompt
+ERROR:root:Failed to validate prompt for output 9:
+ERROR:root:* CheckpointLoaderSimple 1:
+ERROR:root:  - Value not in list: ckpt_name: 'photon_v1' not in ['lazymixRealAmateur_v30b.safetensors', 'majicmixRealistic_v7.safetensors', 'perfectdeliberate_v5.safetensors', 'photon_v1.safetensors', 'pyrosNSFWSDXL_v04.safetensors', 'sd_xl_base_1.0.safetensors', 'sd_xl_refiner_1.0.safetensors', 'sd_xl_turbo_1.0_fp16.safetensors', 'xxmix9realisticsdxl_v10.safetensors']
+ERROR:root:* LoraLoader 16:
+ERROR:root:  - Value not in list: lora_name: 'hair_length_slider_v1' not in ['EkuneSideDoggy.safetensors', 'GoodPussyV1.safetensors', 'MS_Real_DoggyStyleFront_Lite.safetensors', 'MissionaryVaginal-v2.safetensors', 'Tanlines05.safetensors', 'breasts_squeezed_together_v0.2.safetensors', 'hourglassv01.safetensors', 'microbikiniv1.safetensors', 'povBlowjob_v1.safetensors', 'raveclothesv1.safetensors', 'sexylingeriev1.safetensors', 'shirtliftv1.safetensors', 'skin_tone_slider_v1.safetensors', 'sportsbrav1.safetensors', 'weight_slider_v2.safetensors', 'yogapantsv01.safetensors']
+ERROR:root:Output will be ignored
+invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+got prompt
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-46' coro=<RequestHandler.start() done, defined at /home/stefan-nel/.local/lib/python3.10/site-packages/aiohttp/web_protocol.py:462> exception=AssertionError()>
+Traceback (most recent call last):
+  File "/home/stefan-nel/.local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 505, in start
+    request = self._request_factory(message, payload, self, writer, handler)
+  File "/home/stefan-nel/.local/lib/python3.10/site-packages/aiohttp/web_app.py", line 446, in _make_request
+    return _cls(
+  File "/home/stefan-nel/.local/lib/python3.10/site-packages/aiohttp/web_request.py", line 811, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/stefan-nel/.local/lib/python3.10/site-packages/aiohttp/web_request.py", line 188, in __init__
+    assert transport is not None
+AssertionError
+model_type EPS
+adm 0
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+Requested to load SD1ClipModel
+Loading 1 new model
+/usr/local/lib/python3.10/dist-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Requested to load BaseModel
+Loading 1 new model
+/usr/local/lib/python3.10/dist-packages/torchsde/_brownian/brownian_interval.py:594: UserWarning: Should have tb<=t1 but got tb=14.614643096923828 and t1=14.614643.
+  warnings.warn(f"Should have {tb_name}<=t1 but got {tb_name}={tb} and t1={self._end}.")
+/usr/local/lib/python3.10/dist-packages/torchsde/_brownian/brownian_interval.py:585: UserWarning: Should have ta>=t0 but got ta=0.02916753850877285 and t0=0.029168.
+  warnings.warn(f"Should have ta>=t0 but got ta={ta} and t0={self._start}.")
+100%|██████████████████████| 40/40 [00:07<00:00,  5.73it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.10it/s]
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+Requested to load AutoencoderKL
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:44<00:00,  1.10s/it]100%|██████████████████████| 40/40 [00:44<00:00,  1.10s/it]
+Prompt executed in 87.29 seconds
+got prompt
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.87it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.55it/s]
+100%|██████████████████████| 40/40 [00:44<00:00,  1.11s/it]100%|██████████████████████| 40/40 [00:44<00:00,  1.12s/it]
+Prompt executed in 61.78 seconds
+got prompt
+Requested to load BaseModel
+Loading 1 new model
+100%|████████████████████| 100/100 [00:17<00:00,  5.83it/s]100%|████████████████████| 100/100 [00:17<00:00,  5.65it/s]
+100%|██████████████████████| 40/40 [00:45<00:00,  1.13s/it]100%|██████████████████████| 40/40 [00:45<00:00,  1.13s/it]
+Prompt executed in 72.41 seconds
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+Requested to load BaseModel
+Loading 1 new model
+100%|████████████████████| 100/100 [00:17<00:00,  5.90it/s]100%|████████████████████| 100/100 [00:17<00:00,  5.68it/s]
+/usr/local/lib/python3.10/dist-packages/torchsde/_brownian/brownian_interval.py:585: UserWarning: Should have ta>=t0 but got ta=0.0291675366461277 and t0=0.029168.
+  warnings.warn(f"Should have ta>=t0 but got ta={ta} and t0={self._start}.")
+100%|██████████████████████| 40/40 [00:45<00:00,  1.13s/it]100%|██████████████████████| 40/40 [00:45<00:00,  1.14s/it]
+Prompt executed in 73.02 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 9:
+ERROR:root:* UpscaleModelLoader 11:
+ERROR:root:  - Value not in list: model_name: '4x-UltraSharp' not in ['4xUltrasharp_4xUltrasharpV10.pt']
+ERROR:root:Output will be ignored
+invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+got prompt
+Requested to load SD1ClipModelgot prompt
+
+Loading 1 new model
+got prompt
+got prompt
+got prompt
+got prompt
+got prompt
+got prompt
+got prompt
+got prompt
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.40it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.26it/s]
+100%|██████████████████████| 40/40 [00:46<00:00,  1.15s/it]100%|██████████████████████| 40/40 [00:46<00:00,  1.17s/it]
+Prompt executed in 65.23 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.38it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.25it/s]
+100%|██████████████████████| 40/40 [00:49<00:00,  1.19s/it]100%|██████████████████████| 40/40 [00:49<00:00,  1.24s/it]
+Prompt executed in 66.35 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.07it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.05it/s]
+100%|██████████████████████| 40/40 [00:47<00:00,  1.16s/it]100%|██████████████████████| 40/40 [00:47<00:00,  1.18s/it]
+Prompt executed in 64.38 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.21it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.13it/s]
+100%|██████████████████████| 40/40 [00:47<00:00,  1.18s/it]100%|██████████████████████| 40/40 [00:47<00:00,  1.20s/it]
+Prompt executed in 64.64 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.16it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.05it/s]
+100%|██████████████████████| 40/40 [00:48<00:00,  1.18s/it]100%|██████████████████████| 40/40 [00:48<00:00,  1.20s/it]
+Prompt executed in 65.13 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.28it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.13it/s]
+100%|██████████████████████| 40/40 [00:49<00:00,  1.21s/it]100%|██████████████████████| 40/40 [00:49<00:00,  1.23s/it]
+Prompt executed in 65.69 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.19it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.11it/s]
+100%|██████████████████████| 40/40 [00:50<00:00,  1.28s/it]100%|██████████████████████| 40/40 [00:50<00:00,  1.27s/it]
+Prompt executed in 67.66 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  4.94it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.01it/s]
+100%|██████████████████████| 40/40 [00:52<00:00,  1.31s/it]100%|██████████████████████| 40/40 [00:52<00:00,  1.31s/it]
+Prompt executed in 69.26 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:07<00:00,  5.12it/s]100%|██████████████████████| 40/40 [00:07<00:00,  5.03it/s]
+100%|██████████████████████| 40/40 [00:53<00:00,  1.32s/it]100%|██████████████████████| 40/40 [00:53<00:00,  1.33s/it]
+Prompt executed in 70.07 seconds
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 40/40 [00:08<00:00,  4.97it/s]100%|██████████████████████| 40/40 [00:08<00:00,  4.87it/s]
+100%|██████████████████████| 40/40 [00:53<00:00,  1.33s/it]100%|██████████████████████| 40/40 [00:53<00:00,  1.34s/it]
+Prompt executed in 70.74 seconds
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json
+got prompt
+ERROR:root:Failed to validate prompt for output 9:
+ERROR:root:* UpscaleModelLoader 11:
+ERROR:root:  - Value not in list: model_name: '4x-UltraSharp' not in ['4xUltrasharp_4xUltrasharpV10.pt']
+ERROR:root:Output will be ignored
+invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+got prompt
+model_type EPS
+adm 0
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['alphas_cumprod', 'alphas_cumprod_prev', 'betas', 'log_one_minus_alphas_cumprod', 'posterior_log_variance_clipped', 'posterior_mean_coef1', 'posterior_mean_coef2', 'posterior_variance', 'sqrt_alphas_cumprod', 'sqrt_one_minus_alphas_cumprod', 'sqrt_recip_alphas_cumprod', 'sqrt_recipm1_alphas_cumprod', 'cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+Requested to load SD1ClipModel
+Loading 1 new model
+Requested to load BaseModel
+Loading 1 new model
+/usr/local/lib/python3.10/dist-packages/torchsde/_brownian/brownian_interval.py:594: UserWarning: Should have tb<=t1 but got tb=14.614644050598145 and t1=14.614643.
+  warnings.warn(f"Should have {tb_name}<=t1 but got {tb_name}={tb} and t1={self._end}.")
+100%|██████████████████████| 10/10 [00:12<00:00,  1.14s/it]100%|██████████████████████| 10/10 [00:12<00:00,  1.28s/it]
+100%|██████████████████████| 10/10 [00:43<00:00,  3.78s/it]100%|██████████████████████| 10/10 [00:43<00:00,  4.32s/it]
+Prompt executed in 114.64 seconds
+got prompt
+model_type EPS
+adm 0
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+Requested to load SD1ClipModel
+Loading 1 new model
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████| 60/60 [01:16<00:00,  1.08s/it]100%|██████████████████████| 60/60 [01:16<00:00,  1.28s/it]
+100%|██████████████████████| 20/20 [01:35<00:00,  4.27s/it]100%|██████████████████████| 20/20 [01:35<00:00,  4.78s/it]
+Prompt executed in 224.99 seconds
+got prompt
+model_type EPS
+adm 2816
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+lora key not loaded lora_unet_down_blocks_0_attentions_0_proj_in.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_proj_in.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_proj_in.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_proj_out.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_proj_out.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_proj_out.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_k.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_k.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_k.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_out_0.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_out_0.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_out_0.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_q.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_q.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_q.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_v.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_v.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn1_to_v.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_k.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_k.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_k.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_out_0.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_out_0.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_out_0.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_q.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_q.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_q.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_v.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_v.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_attn2_to_v.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_ff_net_0_proj.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_ff_net_0_proj.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_ff_net_0_proj.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_ff_net_2.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_ff_net_2.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_0_transformer_blocks_0_ff_net_2.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_proj_in.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_proj_in.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_proj_in.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_proj_out.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_proj_out.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_proj_out.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_k.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_k.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_k.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_out_0.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_out_0.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_out_0.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_q.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_q.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_q.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_v.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_v.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn1_to_v.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_k.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_k.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_k.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_out_0.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_out_0.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_out_0.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_q.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_q.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_q.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_v.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_v.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_attn2_to_v.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_ff_net_0_proj.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_ff_net_0_proj.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_ff_net_0_proj.lora_up.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_ff_net_2.alpha
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_ff_net_2.lora_down.weight
+lora key not loaded lora_unet_down_blocks_0_attentions_1_transformer_blocks_0_ff_net_2.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_proj_in.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_proj_in.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_proj_in.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_proj_out.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_proj_out.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_proj_out.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_k.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_q.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_v.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn1_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_k.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_q.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_v.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_attn2_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_ff_net_0_proj.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_ff_net_0_proj.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_ff_net_0_proj.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_ff_net_2.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_ff_net_2.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_0_transformer_blocks_0_ff_net_2.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_proj_in.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_proj_in.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_proj_in.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_proj_out.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_proj_out.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_proj_out.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_k.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_q.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_v.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn1_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_k.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_q.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_v.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_attn2_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_ff_net_0_proj.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_ff_net_0_proj.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_ff_net_0_proj.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_ff_net_2.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_ff_net_2.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_1_transformer_blocks_0_ff_net_2.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_proj_in.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_proj_in.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_proj_in.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_proj_out.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_proj_out.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_proj_out.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_k.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_q.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_v.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn1_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_k.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_q.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_v.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_attn2_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_ff_net_0_proj.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_ff_net_0_proj.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_ff_net_0_proj.lora_up.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_ff_net_2.alpha
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_ff_net_2.lora_down.weight
+lora key not loaded lora_unet_up_blocks_2_attentions_2_transformer_blocks_0_ff_net_2.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_proj_in.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_proj_in.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_proj_in.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_proj_out.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_proj_out.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_proj_out.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_k.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_q.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_v.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn1_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_k.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_q.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_v.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_attn2_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_ff_net_0_proj.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_ff_net_0_proj.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_ff_net_0_proj.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_ff_net_2.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_ff_net_2.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_0_transformer_blocks_0_ff_net_2.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_proj_in.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_proj_in.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_proj_in.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_proj_out.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_proj_out.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_proj_out.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_k.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_q.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_v.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn1_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_k.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_q.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_v.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_attn2_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_ff_net_0_proj.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_ff_net_0_proj.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_ff_net_0_proj.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_ff_net_2.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_ff_net_2.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_1_transformer_blocks_0_ff_net_2.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_proj_in.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_proj_in.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_proj_in.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_proj_out.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_proj_out.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_proj_out.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_k.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_q.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_v.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn1_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_k.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_k.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_k.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_out_0.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_out_0.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_out_0.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_q.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_q.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_q.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_v.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_v.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_attn2_to_v.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_ff_net_0_proj.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_ff_net_0_proj.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_ff_net_0_proj.lora_up.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_ff_net_2.alpha
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_ff_net_2.lora_down.weight
+lora key not loaded lora_unet_up_blocks_3_attentions_2_transformer_blocks_0_ff_net_2.lora_up.weight
+Requested to load SDXLClipModel
+Loading 1 new model
+Requested to load SDXL
+Loading 1 new model
+ERROR diffusion_model.input_blocks.4.1.transformer_blocks.0.attn2.to_v.weight shape '[640, 2048]' is invalid for input of size 491520
+ERROR diffusion_model.input_blocks.4.1.transformer_blocks.0.attn2.to_k.weight shape '[640, 2048]' is invalid for input of size 491520
+ERROR diffusion_model.input_blocks.5.1.transformer_blocks.0.attn2.to_v.weight shape '[640, 2048]' is invalid for input of size 491520
+ERROR diffusion_model.input_blocks.5.1.transformer_blocks.0.attn2.to_k.weight shape '[640, 2048]' is invalid for input of size 491520
+ERROR diffusion_model.input_blocks.7.1.transformer_blocks.0.attn2.to_v.weight shape '[1280, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.input_blocks.7.1.transformer_blocks.0.attn2.to_k.weight shape '[1280, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.input_blocks.8.1.transformer_blocks.0.attn2.to_v.weight shape '[1280, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.input_blocks.8.1.transformer_blocks.0.attn2.to_k.weight shape '[1280, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.middle_block.1.transformer_blocks.0.attn2.to_v.weight shape '[1280, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.middle_block.1.transformer_blocks.0.attn2.to_k.weight shape '[1280, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.output_blocks.3.1.proj_in.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.3.1.proj_out.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.attn2.to_out.0.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.attn1.to_k.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.attn1.to_q.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.attn1.to_v.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.attn2.to_q.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.attn2.to_v.weight shape '[640, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.ff.net.0.proj.weight shape '[5120, 640]' is invalid for input of size 13107200
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.attn2.to_k.weight shape '[640, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.attn1.to_out.0.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.3.1.transformer_blocks.0.ff.net.2.weight shape '[640, 2560]' is invalid for input of size 6553600
+ERROR diffusion_model.output_blocks.4.1.proj_in.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.4.1.proj_out.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.attn2.to_out.0.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.attn1.to_k.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.attn1.to_q.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.attn1.to_v.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.attn2.to_q.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.attn2.to_v.weight shape '[640, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.ff.net.0.proj.weight shape '[5120, 640]' is invalid for input of size 13107200
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.attn2.to_k.weight shape '[640, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.attn1.to_out.0.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.4.1.transformer_blocks.0.ff.net.2.weight shape '[640, 2560]' is invalid for input of size 6553600
+ERROR diffusion_model.output_blocks.5.1.proj_in.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.5.1.proj_out.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.attn2.to_out.0.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.attn1.to_k.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.attn1.to_q.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.attn1.to_v.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.attn2.to_q.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.attn2.to_v.weight shape '[640, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.ff.net.0.proj.weight shape '[5120, 640]' is invalid for input of size 13107200
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.attn2.to_k.weight shape '[640, 2048]' is invalid for input of size 983040
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.attn1.to_out.0.weight shape '[640, 640]' is invalid for input of size 1638400
+ERROR diffusion_model.output_blocks.5.1.transformer_blocks.0.ff.net.2.weight shape '[640, 2560]' is invalid for input of size 6553600
+100%|██████████████████████| 60/60 [01:29<00:00,  1.26s/it]100%|██████████████████████| 60/60 [01:29<00:00,  1.48s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+100%|██████████████████████| 20/20 [01:13<00:00,  3.17s/it]100%|██████████████████████| 20/20 [01:13<00:00,  3.66s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Prompt executed in 286.34 seconds
+got prompt
+model_type EPS
+adm 0
+Using pytorch attention in VAE
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+Using pytorch attention in VAE
+missing {'cond_stage_model.clip_l.text_projection', 'cond_stage_model.clip_l.logit_scale'}
+left over keys: dict_keys(['cond_stage_model.clip_l.transformer.text_model.embeddings.position_ids'])
+loaded straight to GPU
+Requested to load BaseModel
+Loading 1 new model
+Requested to load SD1ClipModel
+Loading 1 new model
+100%|██████████████████████| 20/20 [00:05<00:00,  4.16it/s]100%|██████████████████████| 20/20 [00:05<00:00,  3.96it/s]
+Prompt executed in 80.23 seconds
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
+Install custom node 'ComfyUI Inspire Pack'
+install: ['https://github.com/ltdrdata/ComfyUI-Inspire-Pack']
+Download: git clone 'https://github.com/ltdrdata/ComfyUI-Inspire-Pack'
+0it [00:00, ?it/s]100%|███████████████| 215.0/215.0 [00:01<00:00, 125.88it/s]100%|███████████████| 215.0/215.0 [00:01<00:00, 125.85it/s]100%|████████████████| 103.0/103.0 [00:01<00:00, 59.98it/s]100%|████████████████| 103.0/103.0 [00:01<00:00, 59.97it/s]100%|███████████████| 648.0/648.0 [00:01<00:00, 361.01it/s]100%|███████████████| 648.0/648.0 [00:01<00:00, 360.94it/s]100%|███████████████| 453.0/453.0 [00:01<00:00, 242.14it/s]100%|███████████████| 453.0/453.0 [00:01<00:00, 242.09it/s]100%|███████████████| 453.0/453.0 [00:02<00:00, 185.82it/s]
+Install: pip packages
+
+## ComfyUI-Manager: EXECUTE => ['/usr/bin/python', '-m', 'pip', 'install', 'matplotlib']
+ Defaulting to user installation because normal site-packages is not writeable
+ Requirement already satisfied: matplotlib in /usr/local/lib/python3.10/dist-packages (3.8.1)
+ Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (1.2.0)
+ Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (0.12.1)
+ Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (4.44.0)
+ Requirement already satisfied: kiwisolver>=1.3.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib) (1.4.5)
+ Requirement already satisfied: numpy<2,>=1.21 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib) (1.25.2)
+ Requirement already satisfied: packaging>=20.0 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib) (23.1)
+ Requirement already satisfied: pillow>=8 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib) (10.0.1)
+ Requirement already satisfied: pyparsing>=2.3.1 in /usr/lib/python3/dist-packages (from matplotlib) (2.4.7)
+ Requirement already satisfied: python-dateutil>=2.7 in /home/stefan-nel/.local/lib/python3.10/site-packages (from matplotlib) (2.8.2)
+ Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 24.0 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+Installation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1514988643_custom-node-list.json
+FETCH DATA from: /mnt/c/Users/Stefa/Code_Local/ComfyUI/custom_nodes/ComfyUI-Manager/.cache/1742899825_extension-node-map.json
